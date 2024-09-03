@@ -1,0 +1,47 @@
+/* Container for the background image and content */
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the left */
+  background-image: url('3.png'); /* Update with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-left: 50px;
+}
+
+/* Content box with the text and button */
+.content1 {
+  background-color: #16867c; /* Semi-transparent background */
+  padding: 30px;
+  max-width: 400px;
+  color: white;
+}
+
+/* Heading styling */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+/* Button styling */
+button {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: white;
+  color: #855f56;
+}

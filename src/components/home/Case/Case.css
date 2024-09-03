@@ -1,0 +1,86 @@
+
+
+/* Wrapper styling */
+.wrapper {
+  padding: 10px 5%;
+}
+
+/* Card area styling */
+#card-area {
+  padding: 50px 0;
+}
+
+/* Grid layout for the cards */
+.box-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+/* Card box styling */
+.boxc {
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  width: 350px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+/* Image styling and transition for blur effect on hover */
+.boxc img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s, filter 0.5s;
+}
+
+/* Overlay styling (invisible initially) */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Hidden initially */
+  transition: opacity 0.5s;
+}
+
+/* Styling for the text inside the overlay */
+.overlay h3 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 15px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.overlay a {
+  color: #131212;
+  text-decoration: none;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 50px;
+  padding: 5px 15px;
+}
+
+/* Hover effects */
+.boxc:hover img {
+  transform: scale(1.1);
+  filter: blur(1px); /* Blur the image */
+}
+
+.boxc:hover .overlay {
+  opacity: 1; /* Show overlay and text */
+}

@@ -1,0 +1,99 @@
+/*--------header------------*/
+header {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 0px;
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 5px 15px;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+header.scroll {
+  background-color: #156962a3; /* Background color when scrolling */
+}
+
+header .nav {
+  display: flex !important;
+}
+
+header li {
+  margin-right: 40px;
+}
+
+header ul {
+  padding: 30px 20px;
+}
+
+header ul li a {
+  color: #000;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+header ul li a:hover {
+  color: #1eb2a6;
+}
+
+.start {
+  background-color: #1eb2a6;
+  padding: 22px 75px;
+  height: 10%;
+  color: #fff;
+  clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.toggle {
+  display: none;
+}
+
+/* Adding top padding to the body to account for the fixed header */
+body {
+  padding-top: 90px;
+}
+
+/*--------header------------*/
+@media screen and (max-width: 768px) {
+  .start {
+    clip-path: none;
+  }
+
+  header {
+    margin: 0;
+    background-color: #1eb2a6;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  header ul.flexSB {
+    display: none;
+  }
+
+  header ul li {
+    margin-bottom: 20px;
+  }
+
+  .toggle {
+    display: block;
+    background: none;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    top: -20px;
+  }
+
+  .mobile-nav {
+    position: absolute;
+    top: 7vh;
+    left: 0;
+    width: 100%;
+    background-color: #1eb2a6;
+  }
+}
